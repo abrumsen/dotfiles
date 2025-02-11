@@ -12,6 +12,7 @@ return {
 					"lua_ls", -- Lua
 					"cssls", -- CSS
 					"jdtls",
+					"dockerls",
 				},
 			})
 
@@ -48,6 +49,10 @@ return {
 			})
 
 			lspconfig.jdtls.setup({
+				capabilities = capabilities,
+			})
+
+			lspconfig.dockerls.setup({
 				capabilities = capabilities,
 			})
 

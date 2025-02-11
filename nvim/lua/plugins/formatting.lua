@@ -19,6 +19,7 @@ return {
 					"stylua",
 					"prettier",
 					"google_java_format",
+					"hadolint",
 				},
 				automatic_installation = true,
 			})
@@ -33,6 +34,7 @@ return {
 					null_ls.builtins.formatting.black,
 					null_ls.builtins.formatting.stylua,
 					null_ls.builtins.formatting.google_java_format,
+					null_ls.builtins.diagnostics.hadolint,
 				},
 			})
 
